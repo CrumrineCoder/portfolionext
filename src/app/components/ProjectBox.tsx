@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import logo from "../assets/images/bardicLogo.png";
+//import logo from "../assets/images/bardicLogo.png";
 interface ProjectBoxProps {
-  key: any;
+  key: number;
   project: {
     logo: string;
     color: string;
@@ -18,7 +18,7 @@ interface ProjectBoxProps {
     classToAdd: string;
   };
   selectedProject: boolean;
-  onclick: any;
+  onclick: (key: number) => void;
   noProjectSelected: boolean;
 }
 

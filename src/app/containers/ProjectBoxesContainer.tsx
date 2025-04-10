@@ -1,12 +1,12 @@
-import React, { Component } from "react";
+import React from "react";
 
 import ProjectBox from "../components/ProjectBox";
 
 import { Dispatch } from "react";
 
 interface ProjectBoxesContainerProps {
-  selectedProject: any;
-  setSelectedProject: Dispatch<any>;
+  selectedProject: number;
+  setSelectedProject: Dispatch<number>;
   projectData: {
     logo: string;
     color: string;
