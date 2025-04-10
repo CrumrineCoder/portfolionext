@@ -7,40 +7,42 @@ import Header from "./components/header";
 
 import ProjectBoxesContainer from "./containers/ProjectBoxesContainer";
 
-import bardicLogo from "./assets/images/bardicLogo.png";
-import raptureLogo from "./assets/images/raptureLogo.png";
-import votingLogo from "./assets/images/votingAppLogo.png";
-import cookiesLogo from "./assets/images/cookiesWebsiteLogo.png";
-import npcLogo from "./assets/images/npcLookUpLogo.png";
-import twitchViewrLogo from "./assets/images/twitchViewerLogo.png";
-import tmbgLogo from "./assets/images/tmbgLogo.png";
-import connectFourLogo from "./assets/images/connectFourAppLogo.png";
-import weatherLogo from "./assets/images/weatherApp logo.png";
-import quotesLogo from "./assets/images/quotesAppLogo.png";
-import wikipediaLogo from "./assets/images/wikipediaViewerLogo.png";
-import calculatorLogo from "./assets/images/calculatorAppLogo.png";
-import pomodoroLogo from "./assets/images/pomodoroAppLogo.png";
+import bardicLogo from "../../public/images/bardicLogo.png";
+import raptureLogo from "../../public/images/raptureLogo.png";
+import votingLogo from "../../public/images/votingAppLogo.png";
+import cookiesLogo from "../../public/images/cookiesWebsiteLogo.png";
+import npcLogo from "../../public/images/npcLookUpLogo.png";
+import twitchViewrLogo from "../../public/images/twitchViewerLogo.png";
+import tmbgLogo from "../../public/images/tmbgLogo.png";
+import connectFourLogo from "../../public/images/connectFourAppLogo.png";
+import weatherLogo from "../../public/images/weatherApp logo.png";
+import quotesLogo from "../../public/images/quotesAppLogo.png";
+import wikipediaLogo from "../../public/images/wikipediaViewerLogo.png";
+import calculatorLogo from "../../public/images/calculatorAppLogo.png";
+import pomodoroLogo from "../../public/images/pomodoroAppLogo.png";
 
-import baseVideo from "./assets/videos/portfolioMetro.mp4";
+import baseVideo from "../../public/videos/portfolioMetro.mp4";
 
-import bardicVideo from "./assets/videos/Bardic Inspiration2.mp4";
-import raptureVideo from "./assets/videos/raptureFashion.mp4";
-import pollingVideo from "./assets/videos/Polling.mp4";
-import cookiesVideo from "./assets/videos/PennyJanesCookies.mp4";
-import npcVideo from "./assets/videos/NPC.mp4";
-import twitchVideo from "./assets/videos/Twitch.mp4";
-import tmbgVideo from "./assets/videos/TMBG.mp4";
-import connectFourVideo from "./assets/videos/C4.mp4";
-import weatherVideo from "./assets/videos/Weather.mp4";
-import quotesVideo from "./assets/videos/Quote.mp4";
-import wikipediaVideo from "./assets/videos/wiki.mp4";
-import calculatorVideo from "./assets/videos/Calc.mp4";
-import pomodoroVideo from "./assets/videos/Pomodoro.mp4";
-import ProjectInfo from "./components/ProjectInfo";
+import bardicVideo from "../../public/videos/Bardic Inspiration2.mp4";
+import raptureVideo from "../../public/videos/raptureFashion.mp4";
+import pollingVideo from "../../public/videos/Polling.mp4";
+import cookiesVideo from "../../public/videos/PennyJanesCookies.mp4";
+import npcVideo from "../../public/videos/NPC.mp4";
+import twitchVideo from "../../public/videos/Twitch.mp4";
+import tmbgVideo from "../../public/videos/TMBG.mp4";
+import connectFourVideo from "../../public/videos/C4.mp4";
+import weatherVideo from "../../public/videos/Weather.mp4";
+import quotesVideo from "../../public/videos/Quote.mp4";
+import wikipediaVideo from "../../public/videos/wiki.mp4";
+import calculatorVideo from "../../public/videos/Calc.mp4";
+import pomodoroVideo from "../../public/videos/Pomodoro.mp4";
 
-import seanPFP from "./assets/images/Sean.jpg";
-import robertPFP from "./assets/images/Robert.jpg";
+
+import seanPFP from "../../public/images/Sean.jpg";
+import robertPFP from "../../public/images/Robert.jpg";
+
 import Recommendation from "./components/Recommendation";
+import ProjectInfo from "./components/ProjectInfo";
 
 const projectData = [
   {

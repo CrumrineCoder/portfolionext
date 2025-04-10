@@ -1,24 +1,17 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  webpack(config, { isServer }) {
-    const prefix = config.assetPrefix ?? config.basePath ?? "";
+  webpack(config) {
     config.module.rules.push({
-      test: /\.mp4$/,
-      use: [
-        {
-          loader: "file-loader",
-          options: {
-            publicPath: `${prefix}/_next/static/media/`,
-            outputPath: `${process.env.NODE_ENV === "development" ? "" : "../"}${
-              isServer ? "../" : ""
-            }static/media/`,
-            name: "[name].[hash:8].[ext]",
-          },
+      test: /\.(mp4|webm|ogg|mp3|wav|flac|aac|rtf|doc|docx)$/,
+      use: {
+        loader: 'file-loader',
+        options: {
+          name: 'static/media/[name].[hash].[ext]',
+          publicPath: '/_next/',
         },
-      ],
+      },
     });
-
     return config;
   },
 };
