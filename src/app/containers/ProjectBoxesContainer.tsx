@@ -9,7 +9,7 @@ interface ProjectBoxesContainerProps {
   selectedProject: number;
   setSelectedProject: Dispatch<number>;
   projectData: {
-    logo: StaticImageData;
+    logo: StaticImageData | string;
     colour: string;
     projectName: string;
     shortDesc: string;

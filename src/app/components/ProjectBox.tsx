@@ -4,7 +4,7 @@ import { StaticImageData } from "next/image";
 interface ProjectBoxProps {
   key: number;
   project: {
-    logo: StaticImageData;
+    logo: StaticImageData | string;
     colour: string;
     projectName: string;
     shortDesc: string;
@@ -47,7 +47,7 @@ class ProjectBox extends Component<ProjectBoxProps> {
         >
           <div
             className="landingBoxInner"
-            style={{ backgroundImage: `url(${this.props.project.logo.src})` }}
+            style={{ backgroundImage: `url(${this.props.project.logo})` }}
           >
             <a
               href={this.props.project.codeLink}
