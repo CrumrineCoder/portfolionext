@@ -43,7 +43,7 @@ class ProjectBox extends Component<ProjectBoxProps> {
           className="landingBox"
           onMouseOver={() => this.props.onclick(this.props.key)}
           style={{ background: this.props.project.colour }}
-          key={this.props.key}
+
         >
           <div
             className="landingBoxInner"
