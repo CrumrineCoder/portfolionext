@@ -34,8 +34,8 @@ const ProjectBoxesContainer: React.FC<ProjectBoxesContainerProps> = ({
 }) => {
     return (
         <div className={
-          !noProjectSelected
-              ?projectData[selectedProject].classToAdd +
+          !noProjectSelected && selectedProject !== null
+              ? projectData[selectedProject].classToAdd +
               "Bar landingBoxesContainer customScrollBar"
               : "landingBoxesContainer customScrollBar defaultBar"
       }>

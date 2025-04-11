@@ -15,7 +15,7 @@ import npcLogo from "../../public/images/npcLookUpLogo.png";
 import twitchViewrLogo from "../../public/images/twitchViewerLogo.png";
 import tmbgLogo from "../../public/images/tmbgLogo.png";
 import connectFourLogo from "../../public/images/connectFourAppLogo.png";
-import weatherLogo from "../../public/images/weatherApp logo.png";
+import weatherLogo from "../../public/images/weatherApplogo.png";
 import quotesLogo from "../../public/images/quotesAppLogo.png";
 import wikipediaLogo from "../../public/images/wikipediaViewerLogo.png";
 import calculatorLogo from "../../public/images/calculatorAppLogo.png";
