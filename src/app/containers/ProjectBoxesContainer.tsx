@@ -6,7 +6,7 @@ import { Dispatch } from "react";
 import { StaticImageData } from "next/image";
 
 interface ProjectBoxesContainerProps {
-  selectedProject: number;
+  selectedProject: number | null;
   setSelectedProject: Dispatch<number>;
   projectData: {
     logo: StaticImageData;

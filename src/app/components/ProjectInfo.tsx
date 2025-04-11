@@ -3,7 +3,7 @@ import React, { Component } from "react";
 //import { Spring } from 'react-spring/renderprops';
 // import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
 interface ProjectInfoProps {
-  selectedProject: number;
+  selectedProject: number | null;
   noProjectSelected: boolean;
   projectData: {
     logo: StaticImageData | string;
@@ -34,7 +34,7 @@ class ProjectInfo extends Component<ProjectInfoProps> {
     return (
     <div
         className={
-            noProjectSelected || !projectData[selectedProject]
+            noProjectSelected || selectedProject === null || !projectData[selectedProject]
                 ? "landingTitleBody"
                 : projectData[selectedProject].classToAdd +
                     "DarkOpacity landingTitleBody coloredTitleBody"

@@ -307,27 +307,23 @@ function App() {
           }
         />
       </div>
-      {selectedProject === null ? (
-        <div>No project selected</div>
-      ) : (
+   
         <ProjectInfo
           selectedProject={selectedProject}
           noProjectSelected={selectedProject === null}
           projectData={projectData}
         />
-      )}
+  
 
       <div className="landingBottomContainer">
-        {selectedProject === null ? (
-          <div>No project selected</div>
-        ) : (
+ 
           <ProjectBoxesContainer
             selectedProject={selectedProject}
             setSelectedProject={setSelectedProject}
             projectData={projectData}
             noProjectSelected={selectedProject === null}
           />
-        )}
+     
       </div>
       <div className="recommendationSectionContainer">
         {recommendations.map((recommendation, index) => (
@@ -340,7 +336,11 @@ function App() {
             icon={recommendation.icon}
             selectedProject={selectedProject}
             noProjectSelected={selectedProject === null}
-            colour={projectData[selectedProject]?.classToAdd}
+            colour={
+              selectedProject === null
+                ? "black"
+                : projectData[selectedProject]?.classToAdd
+            }
           />
         ))}
       </div>

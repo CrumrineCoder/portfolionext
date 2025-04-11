@@ -18,7 +18,7 @@ interface ProjectBoxProps {
     video: string;
     classToAdd: string;
   };
-  selectedProject: boolean;
+  selectedProject: boolean | null;
   onclick: (key: number) => void;
   noProjectSelected: boolean;
 }

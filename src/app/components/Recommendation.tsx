@@ -7,7 +7,7 @@ interface RecommendationProps {
   name: string;
   role: string;
   company: string;
-  selectedProject: unknown;
+  selectedProject: number | null;
   noProjectSelected: boolean;
   colour: string; 
 }
