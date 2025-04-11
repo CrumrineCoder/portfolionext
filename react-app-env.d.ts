@@ -5,7 +5,3 @@ declare module '*.mp4' {
     export default src;
   }
 
-  declare module "*.png" {
-    const value: string;
-    export = value;
- }
