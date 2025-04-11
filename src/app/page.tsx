@@ -37,7 +37,6 @@ import wikipediaVideo from "../../public/videos/wiki.mp4";
 import calculatorVideo from "../../public/videos/Calc.mp4";
 import pomodoroVideo from "../../public/videos/Pomodoro.mp4";
 
-
 import seanPFP from "../../public/images/Sean.jpg";
 import robertPFP from "../../public/images/Robert.jpg";
 
@@ -56,7 +55,7 @@ const projectData = [
     productPaper:
       "This website was meant to be a simple implementation of a tool, but grew into a study on React Hooks and Sagas, AWS and web security, Redux, and more.",
     codeLink: "https://github.com/CrumrineCoder/Bard-Release",
-   // websiteLink: "https://confectionswithcharacter.com/",
+    // websiteLink: "https://confectionswithcharacter.com/",
     //   caseStudyLink: "https://nicolascrumrine.com/#/posts/-Lntx2aWkC23w704-4z-",
     video: bardicVideo,
     classToAdd: "Bard",
@@ -106,7 +105,7 @@ const projectData = [
     productPaper:
       "Worked with another designer. Developed marketing strategy, wrote a competitive analysis, scheduled and wrote user stories with client.",
     codeLink: "https://github.com/CrumrineCoder/PennyJaneReact",
-   // websiteLink: "http://pennyjanescookies.com/",
+    // websiteLink: "http://pennyjanescookies.com/",
     video: cookiesVideo,
     classToAdd: "Penny",
   },
@@ -122,7 +121,7 @@ const projectData = [
     productPaper:
       "I refined and expanded on Node.JS and Express.js and experimented with AngularJS alongside a database.",
     codeLink: "https://github.com/CrumrineCoder/NPC-LOOK-UP",
-   // websiteLink: "https://npclookup.glitch.me/",
+    // websiteLink: "https://npclookup.glitch.me/",
     video: npcVideo,
     classToAdd: "NPC",
   },
@@ -138,7 +137,7 @@ const projectData = [
     productPaper:
       "I taught myself one-page Angular design with this project as well as using multiple APIs with Angular.",
     codeLink: "https://github.com/CrumrineCoder/Twitch-Viewer-Redone",
-   // websiteLink: "https://crumrinecoder.github.io/Twitch-Viewer-Redone/",
+    // websiteLink: "https://crumrinecoder.github.io/Twitch-Viewer-Redone/",
     freeCodeCampLink:
       "https://www.freecodecamp.org/challenges/show-the-local-weather",
     video: twitchVideo,
@@ -156,7 +155,7 @@ const projectData = [
     productPaper:
       "The website allows users to anonymously comment on the newest album and to find the nearest tour. Also a practice in business marketing and design. Links and most buttons are placeholders.",
     codeLink: "https://github.com/CrumrineCoder/TheyMightBeGiantsv3",
-   // websiteLink: "https://tmbg.herokuapp.com/",
+    // websiteLink: "https://tmbg.herokuapp.com/",
     video: tmbgVideo,
     classToAdd: "TMBG",
   },
@@ -189,7 +188,7 @@ const projectData = [
     productPaper:
       "I originally taught myself multiple APIs, Angular, Sass and Mobile-first design with this project. This was redone with TypeScript, and with new APIs since Dark Sky and Google Location became paid/deprecated.",
     codeLink: "https://github.com/CrumrineCoder/Weather-app-typescript",
-  //  websiteLink: "https://crumrinecoder.github.io/Weather-App/",
+    //  websiteLink: "https://crumrinecoder.github.io/Weather-App/",
     websiteLink: "https://crumrinecoder.github.io/Weather-app-typescript/",
     freeCodeCampLink:
       "https://www.freecodecamp.org/challenges/show-the-local-weather",
@@ -287,7 +286,7 @@ const recommendations = [
 ];
 
 function App() {
-  const [selectedProject, setSelectedProject] = useState<number>(0);
+  const [selectedProject, setSelectedProject] = useState<number | null>(null);
 
   useEffect(() => {}, [selectedProject]);
 
@@ -308,18 +307,27 @@ function App() {
           }
         />
       </div>
-      <ProjectInfo
-        selectedProject={selectedProject}
-        noProjectSelected={selectedProject === null}
-        projectData={projectData}
-      ></ProjectInfo>
-      <div className="landingBottomContainer">
-        <ProjectBoxesContainer
+      {selectedProject === null ? (
+        <div>No project selected</div>
+      ) : (
+        <ProjectInfo
           selectedProject={selectedProject}
-          setSelectedProject={setSelectedProject}
-          projectData={projectData}
           noProjectSelected={selectedProject === null}
+          projectData={projectData}
         />
+      )}
+
+      <div className="landingBottomContainer">
+        {selectedProject === null ? (
+          <div>No project selected</div>
+        ) : (
+          <ProjectBoxesContainer
+            selectedProject={selectedProject}
+            setSelectedProject={setSelectedProject}
+            projectData={projectData}
+            noProjectSelected={selectedProject === null}
+          />
+        )}
       </div>
       <div className="recommendationSectionContainer">
         {recommendations.map((recommendation, index) => (
