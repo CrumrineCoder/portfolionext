@@ -3,12 +3,13 @@ import React from "react";
 import ProjectBox from "../components/ProjectBox";
 
 import { Dispatch } from "react";
+import { StaticImageData } from "next/image";
 
 interface ProjectBoxesContainerProps {
   selectedProject: number;
   setSelectedProject: Dispatch<number>;
   projectData: {
-    logo: string;
+    logo: StaticImageData;
     colour: string;
     projectName: string;
     shortDesc: string;

@@ -1,3 +1,4 @@
+import { StaticImageData } from "next/image";
 import React, { Component } from "react";
 //import { Spring } from 'react-spring/renderprops';
 // import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
@@ -5,7 +6,7 @@ interface ProjectInfoProps {
   selectedProject: number;
   noProjectSelected: boolean;
   projectData: {
-    logo: string;
+    logo: StaticImageData;
     colour: string;
     projectName: string;
     shortDesc: string;

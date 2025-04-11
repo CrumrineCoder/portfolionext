@@ -1,9 +1,10 @@
 import React, { Component } from "react";
+import { StaticImageData } from "next/image";
 //import logo from "../assets/images/bardicLogo.png";
 interface ProjectBoxProps {
   key: number;
   project: {
-    logo: string;
+    logo: StaticImageData;
     colour: string;
     projectName: string;
     shortDesc: string;
@@ -37,6 +38,7 @@ class ProjectBox extends Component<ProjectBoxProps> {
 
     return (
       <>
+     
         <button
           className="landingBox"
           onMouseOver={() => this.props.onclick(this.props.key)}
@@ -45,7 +47,7 @@ class ProjectBox extends Component<ProjectBoxProps> {
         >
           <div
             className="landingBoxInner"
-            style={{ backgroundImage: `url(${this.props.project.logo})` }}
+            style={{ backgroundImage: `url(${this.props.project.logo.src})` }}
           >
             <a
               href={this.props.project.codeLink}
