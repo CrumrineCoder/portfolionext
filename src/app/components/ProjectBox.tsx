@@ -4,7 +4,7 @@ interface ProjectBoxProps {
   key: number;
   project: {
     logo: string;
-    color: string;
+    colour: string;
     projectName: string;
     shortDesc: string;
     frontend: string;
@@ -40,7 +40,7 @@ class ProjectBox extends Component<ProjectBoxProps> {
         <button
           className="landingBox"
           onMouseOver={() => this.props.onclick(this.props.key)}
-          style={{ background: this.props.project.color }}
+          style={{ background: this.props.project.colour }}
           key={this.props.key}
         >
           <div

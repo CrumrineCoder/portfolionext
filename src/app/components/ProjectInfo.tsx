@@ -6,7 +6,7 @@ interface ProjectInfoProps {
   noProjectSelected: boolean;
   projectData: {
     logo: string;
-    color: string;
+    colour: string;
     projectName: string;
     shortDesc: string;
     frontend: string;

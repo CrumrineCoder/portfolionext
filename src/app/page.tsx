@@ -47,7 +47,7 @@ import ProjectInfo from "./components/ProjectInfo";
 const projectData = [
   {
     logo: bardicLogo,
-    color: "#E9C46A",
+    colour: "#E9C46A",
     projectName: "Bardic Inspiration",
     shortDesc: "MERN Music Tagging site",
     frontend: "React.js, React Hooks, Redux.js, react-router, HTML5, CSS3",
@@ -63,7 +63,7 @@ const projectData = [
   },
   {
     logo: raptureLogo,
-    color: "#218F7D",
+    colour: "#218F7D",
     projectName: "Rapture Fashion",
     shortDesc: "React and Shopify Boutique Fashion site",
     frontend: "React.js, Redux.js, react-router, HTML5, CSS3, Bootstrap 4",
@@ -78,7 +78,7 @@ const projectData = [
   },
   {
     logo: votingLogo,
-    color: "#A61C88",
+    colour: "#A61C88",
     projectName: "Polling",
     shortDesc:
       "React.js & Redux fullstack website where users create, view, and vote on polls.",
@@ -97,7 +97,7 @@ const projectData = [
   },
   {
     logo: cookiesLogo,
-    color: "#18788C",
+    colour: "#18788C",
     projectName: "Penny's Cookies",
     shortDesc:
       "Portfolio website for a local NYC cookie bakery and decorating business that I built for a client.",
@@ -112,7 +112,7 @@ const projectData = [
   },
   {
     logo: npcLogo,
-    color: "#EF281A",
+    colour: "#EF281A",
     picture: " Images/npcLookUpv2.png ",
     projectName: "NPC Lookup",
     shortDesc:
@@ -128,7 +128,7 @@ const projectData = [
   },
   {
     logo: twitchViewrLogo,
-    color: "#6441A4",
+    colour: "#6441A4",
     picture: " Images/twitchViewer.png ",
     projectName: "Twitch Viewer",
     shortDesc:
@@ -146,7 +146,7 @@ const projectData = [
   },
   {
     logo: tmbgLogo,
-    color: "#171E26",
+    colour: "#171E26",
     projectName: "TMBG",
     shortDesc:
       "This is a landing page redesign for the They Might Be Giants website.",
@@ -162,7 +162,7 @@ const projectData = [
   },
   {
     logo: connectFourLogo,
-    color: "#FF7F11",
+    colour: "#FF7F11",
     picture: " Images/connectFourApp.png ",
     projectName: "Connect Four",
     shortDesc:
@@ -180,7 +180,7 @@ const projectData = [
   },
   {
     logo: weatherLogo,
-    color: "#048027",
+    colour: "#048027",
     picture: " Images/weatherApp.png ",
     projectName: "Weather",
     shortDesc: "This is a web app that shows the weather based on location.",
@@ -198,7 +198,7 @@ const projectData = [
   },
   {
     logo: quotesLogo,
-    color: "#008080",
+    colour: "#008080",
     picture: " Images/quotesApp.png ",
     projectName: "Quotes",
     shortDesc:
@@ -216,7 +216,7 @@ const projectData = [
   },
   {
     logo: wikipediaLogo,
-    color: "#007CB6",
+    colour: "#007CB6",
     picture: " Images/wikipediaViewer.png ",
     projectName: "Wiki Viewer",
     shortDesc:
@@ -234,7 +234,7 @@ const projectData = [
   },
   {
     logo: calculatorLogo,
-    color: "#865DAF",
+    colour: "#865DAF",
     picture: " Images/calculatorApp.png ",
     projectName: "Calculator",
     shortDesc: "This is a web app that resembles a basic calculator.",
@@ -251,7 +251,7 @@ const projectData = [
   },
   {
     logo: pomodoroLogo,
-    color: "#E90000",
+    colour: "#E90000",
     picture: " Images/pomodoroApp.png ",
     projectName: "Pomodoro",
     shortDesc:
