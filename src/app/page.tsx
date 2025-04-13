@@ -307,23 +307,37 @@ function App() {
           }
         />
       </div>
-   
-        <ProjectInfo
-          selectedProject={selectedProject}
-          noProjectSelected={selectedProject === null}
-          projectData={projectData}
-        />
-  
+
+      <ProjectInfo
+        selectedProject={selectedProject}
+        noProjectSelected={selectedProject === null}
+        projectData={projectData}
+      />
 
       <div className="landingBottomContainer">
- 
-          <ProjectBoxesContainer
-            selectedProject={selectedProject}
-            setSelectedProject={setSelectedProject}
-            projectData={projectData}
-            noProjectSelected={selectedProject === null}
-          />
-     
+        <ProjectBoxesContainer
+          selectedProject={selectedProject}
+          setSelectedProject={setSelectedProject}
+          projectData={projectData}
+          noProjectSelected={selectedProject === null}
+        />
+      </div>
+      <div className="Disclaimer">
+        I am currently working to update these projects to fit industry
+        standards. They should be finished by the end of May 2025! Follow my{" "}
+        <a
+          href="https://github.com/CrumrineCoder"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            color: selectedProject === 6 ? "white" : selectedProject !== null ? projectData[selectedProject]?.colour : undefined,
+          }}
+        >
+          GITHUB
+        </a>{" "}
+        to see updated versions of these codebases until I can update them here.{" "}
+        <br></br>
+        Thanks!
       </div>
       <div className="recommendationSectionContainer">
         {recommendations.map((recommendation, index) => (

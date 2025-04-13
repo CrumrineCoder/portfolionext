@@ -575,6 +575,22 @@ button:focus {
   
 }
 
+.Disclaimer{
+  text-align: center; 
+  background: black; 
+  margin: 0em 2em; 
+  padding: .2em; 
+  border-radius: 5px; 
+  font-size: 2em; 
+  a{
+    color: rgb(178, 178, 178); 
+    font-weight: bold; 
+    &:hover{
+      color: rgb(255, 255, 255); 
+    }
+  }
+}
+
 
 .landingTitleBody{
   background: rgba(17, 17, 17, 0.9);
